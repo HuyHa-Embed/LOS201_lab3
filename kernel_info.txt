@@ -1,0 +1,20 @@
+# uname -a
+Linux huy-ThinkBook-14-G6-IRL 7.0.0-34-generic #34~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep  4 15:38:29 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+# PREEMPT config
+CONFIG_PREEMPT_BUILD=y
+CONFIG_ARCH_HAS_PREEMPT_LAZY=y
+# CONFIG_PREEMPT is not set
+CONFIG_PREEMPT_LAZY=y
+# CONFIG_PREEMPT_RT is not set
+CONFIG_PREEMPT_COUNT=y
+CONFIG_PREEMPTION=y
+CONFIG_PREEMPT_DYNAMIC=y
+CONFIG_PREEMPT_RCU=y
+CONFIG_HAVE_PREEMPT_DYNAMIC=y
+# cmdline
+BOOT_IMAGE=/boot/vmlinuz-7.0.0-34-generic root=UUID=e2133fe7-b703-4d73-a9da-4ba05130f477 ro quiet splash vt.handoff=7
+# CPU
+CPU(s):                                  12
+Model name:                              13th Gen Intel(R) Core(TM) i5-13420H
+BIOS Model name:                         13th Gen Intel(R) Core(TM) i5-13420H To Be Filled By O.E.M. CPU @ 4.5GHz
+CPU(s) scaling MHz:                      20%

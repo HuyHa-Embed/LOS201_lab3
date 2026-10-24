@@ -1,0 +1,122 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 2  of event 'cpu_atom/cycles/P'
+# Event count (approx.): 49998
+#
+# Overhead  Command      Shared Object      Symbol                
+# ........  ...........  .................  ......................
+#
+    50.00%  perf_target  [kernel.kallsyms]  [k] 0xffffffffadcf5a1c
+            |
+            ---0xffffffffadcf5a20
+               0xffffffffadb95e7b
+               0xffffffffadb96394
+               0xffffffffadbabc34
+               0xffffffffadae3b98
+               0xffffffffaee8457a
+               0xffffffffaee83dd2
+               0xffffffffad800bb7
+               __vfprintf_internal
+               ___fprintf_chk (inlined)
+               io_intensive
+
+    50.00%  perf_target  [kernel.kallsyms]  [k] 0xffffffffae0f1541
+            |
+            ---0xffffffffae0f1548
+               0xffffffffadbaba78
+               0xffffffffadae3b98
+               0xffffffffaee8457a
+               0xffffffffaee83dd2
+               0xffffffffad800bb7
+               __vfprintf_internal
+               ___fprintf_chk (inlined)
+               io_intensive
+
+
+
+# Samples: 862  of event 'cpu_core/cycles/P'
+# Event count (approx.): 79078836
+#
+# Overhead  Command      Shared Object         Symbol                         
+# ........  ...........  ....................  ...............................
+#
+    62.50%  perf_target  libm.so.6             [.] __ieee754_log_fma
+            |          
+            |--51.63%--__ieee754_log_fma
+            |          
+            |--9.24%--top16 (inlined)
+            |          __ieee754_log_fma
+            |          
+             --1.64%--heavy_compute
+
+    22.04%  perf_target  perf_target           [.] heavy_compute
+            |          
+            |--15.40%--heavy_compute
+            |          
+             --6.64%--log@plt
+
+     8.09%  perf_target  libm.so.6             [.] log@@GLIBC_2.29
+            |          
+            |--6.99%--__log_finite@GLIBC_2.15@plt
+            |          
+             --1.10%--__log (inlined)
+
+     1.55%  perf_target  libm.so.6             [.] __log_finite@GLIBC_2.15@plt
+            |          
+             --1.41%--__ieee754_log_fma
+
+     0.59%  perf_target  perf_target           [.] log@plt
+            |
+            ---__log (inlined)
+
+     0.37%  perf_target  [kernel.kallsyms]     [k] 0xffffffffaee7f84e
+     0.36%  perf_target  perf_target           [.] main
+     0.27%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadc4c467
+     0.25%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadf5d65b
+     0.14%  perf_target  [kernel.kallsyms]     [k] 0xffffffffaee80d66
+     0.14%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadcc7b90
+     0.14%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadaf6620
+     0.14%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadc01b38
+     0.14%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadbf3f3e
+     0.14%  perf_target  [kernel.kallsyms]     [k] 0xffffffffaee80d85
+     0.14%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadccd342
+     0.14%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadcc93b8
+     0.12%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadf0bc73
+     0.12%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadf7f8de
+     0.12%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadc95d7d
+     0.12%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadf80aa7
+     0.12%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadb98a4e
+     0.12%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadf9a8a7
+     0.12%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadc8901a
+     0.12%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadf77dce
+     0.11%  perf_target  ld-linux-x86-64.so.2  [.] mprotect
+     0.11%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadee1fa8
+     0.11%  perf_target  libc.so.6             [.] __wcsncpy_ifunc
+     0.11%  perf_target  ld-linux-x86-64.so.2  [.] _dl_relocate_object
+     0.11%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadf3e2c2
+     0.10%  perf_target  libc.so.6             [.] __GI__IO_un_link.part.0
+     0.10%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadf2b634
+     0.10%  perf_target  [kernel.kallsyms]     [k] 0xffffffffaee6f930
+     0.10%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadbe84d7
+     0.10%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadf719b2
+     0.10%  perf_target  ld-linux-x86-64.so.2  [.] _dl_load_cache_lookup
+     0.09%  perf_target  [kernel.kallsyms]     [k] 0xffffffffae429429
+     0.09%  perf_target  [kernel.kallsyms]     [k] 0xffffffffaee52b23
+     0.09%  perf_target  [kernel.kallsyms]     [k] 0xffffffffae042a34
+     0.09%  perf_target  ld-linux-x86-64.so.2  [.] __tunable_get_val
+     0.08%  perf_target  ld-linux-x86-64.so.2  [.] update_active.constprop.0
+     0.07%  perf_target  [kernel.kallsyms]     [k] 0xffffffffaee73341
+     0.07%  perf_target  [kernel.kallsyms]     [k] 0xffffffffaee68547
+     0.06%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadf35e69
+     0.05%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadeaa4ad
+     0.04%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadf727cd
+     0.03%  perf_target  [kernel.kallsyms]     [k] 0xffffffffadf54d62
+     0.03%  perf_target  [kernel.kallsyms]     [k] 0xffffffffaee85a28
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

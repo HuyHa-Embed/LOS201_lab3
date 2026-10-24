@@ -1,0 +1,53 @@
+
+ Performance counter stats for './perf_target':
+
+                 3      context-switches                 #     76.9 cs/sec  cs_per_second     
+                 2      cpu-migrations                   #     51.3 migrations/sec  migrations_per_second
+               367      page-faults                      #   9404.8 faults/sec  page_faults_per_second
+             39.02 msec task-clock                       #      0.2 CPUs  CPUs_utilized       
+             2,481      cpu_core/branch-misses/          #      0.0 %  branch_miss_rate         (80.85%)
+        57,298,514      cpu_core/branches/               #   1468.3 M/sec  branch_frequency     (80.85%)
+        85,594,901      cpu_core/cpu-cycles/             #      2.2 GHz  cycles_frequency       (80.85%)
+       418,144,450      cpu_core/instructions/           #      4.9 instructions  insn_per_cycle  (80.85%)
+            63,651      cpu_atom/branch-misses/          #      0.3 %  branch_miss_rate         (6.34%)
+        16,525,057      cpu_atom/branches/               #    423.5 M/sec  branch_frequency     (6.34%)
+        63,360,432      cpu_atom/cpu-cycles/             #      1.6 GHz  cycles_frequency       (6.34%)
+       126,899,011      cpu_atom/instructions/           #      2.0 instructions  insn_per_cycle  (8.41%)
+             TopdownL1 (cpu_core)                        #      0.0 %  tma_bad_speculation    
+                                                         #      5.9 %  tma_frontend_bound       (80.85%)
+                                                         #     11.4 %  tma_backend_bound      
+                                                         #     82.7 %  tma_retiring             (80.85%)
+             TopdownL1 (cpu_atom)                        #     38.6 %  tma_backend_bound        (15.36%)
+                                                         #      3.1 %  tma_frontend_bound       (13.29%)
+                                                         #      0.5 %  tma_bad_speculation    
+                                                         #     57.9 %  tma_retiring             (10.74%)
+
+       0.190068904 seconds time elapsed
+
+       0.038601000 seconds user
+       0.002031000 seconds sys
+
+
+
+ Performance counter stats for './perf_target':
+
+             35.59 msec task-clock                                                            
+                 4      context-switches                                                      
+               365      page-faults                                                           
+        34,751,488      cpu_atom/cycles/                                                        (0.12%)
+        77,749,463      cpu_core/cycles/                                                        (99.88%)
+         9,221,027      cpu_atom/instructions/                                                  (0.12%)
+       369,153,495      cpu_core/instructions/                                                  (99.88%)
+         1,632,407      cpu_atom/branches/                                                      (0.12%)
+        50,669,770      cpu_core/branches/                                                      (99.88%)
+           173,245      cpu_atom/branch-misses/                                                 (0.12%)
+             9,726      cpu_core/branch-misses/                                                 (99.88%)
+           806,036      cpu_atom/cache-misses/                                                  (0.12%)
+            41,220      cpu_core/cache-misses/                                                  (99.88%)
+
+       0.203190302 seconds time elapsed
+
+       0.035991000 seconds user
+       0.001028000 seconds sys
+
+
