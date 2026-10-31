@@ -1,0 +1,3 @@
+#!/bin/sh
+T=$HOME/embedded_lab3/tools/host
+LD_LIBRARY_PATH=$T/usr/lib/x86_64-linux-gnu exec $T/usr/bin/gdb-multiarch --data-directory=/usr/share/gdb "$@"
